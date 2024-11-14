@@ -48,7 +48,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
 
         // Variables para la venta de entradas
         float totalIngresosCria = 0, totalIngresosOto = 0, totalIngresosJazz = 0, resultadoIva, iva = 10;
-        float totalPrecioE, precioUbi = 0, total, totalEntradas, precioDistr = 4.13f, precioDistrIVA, descuento = 0, auxDescuento,
+        float totalPrecioE, precioUbi = 0, total, totalEntradas, totalIndividual, precioDistr = 4.13f, precioDistrIVA, descuento = 0, auxDescuento,
                 totalDispo;
         int cont = 0;
 
@@ -400,6 +400,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                             resultadoIva = (iva * precioUbi) / 100;
                             totalPrecioE = precioUbi + resultadoIva;
                             total = totalPrecioE;
+                            totalIndividual = total + precioDistrIVA;
                             totalEntradas = (total + precioDistrIVA) * entradas;
 
                             // Doy el total de todas las entradas
@@ -551,7 +552,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                                 ║ Precio Entrada: %.2f€ + IVA %s%%: %.2f€ = %.2f€      Descuento: %s      %s
                                                 ║ Precio Distr: 4,13€ + IVA 21%%: 0,87€ = 5,00€                                                       TOTAL: %.2f€
                                                 ╚════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
-                                                """, fechaEvento, hora, evento, ubicacion, precioUbi, iva, resultadoIva, totalPrecioE, descuentoEntrada, codigo, totalEntradas);
+                                                """, fechaEvento, hora, evento, ubicacion, precioUbi, iva, resultadoIva, totalPrecioE, descuentoEntrada, codigo, totalIndividual);
                                     System.out.println("Pulsa 'Enter' para continuar");
                                     s.nextLine();
                                 }
