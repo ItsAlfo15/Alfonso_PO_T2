@@ -91,7 +91,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
             respuesta = s.nextLine().toLowerCase().charAt(0);
 
             // Limpio la pantalla
-            for (int i = 0; i < 40; i++) {
+            for (int i = 0; i < 100; i++) {
                 System.out.println();
             }
 
@@ -110,7 +110,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                         Seleccione el evento al que quiere asistir indicando su número:\s""");
                             resEventoA = Integer.parseInt(s.nextLine());
                             // Limpio la pantalla
-                            for (int i = 0; i < 40; i++) {
+                            for (int i = 0; i < 100; i++) {
                                 System.out.println();
                             }
                             if (resEventoA < 1 || resEventoA > 3) {
@@ -145,7 +145,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                                 Seleccione el tipo de entrada indicando su número:\s""");
                                     resTipoEntrada = Integer.parseInt(s.nextLine());
                                     // Limpio la pantalla
-                                    for (int i = 0; i < 40; i++) {
+                                    for (int i = 0; i < 100; i++) {
                                         System.out.println();
                                     }
                                     if (resTipoEntrada < 1 || resTipoEntrada > 3) {
@@ -190,7 +190,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                                 Seleccione el tipo de entrada indicando su número:\s""");
                                     resTipoEntrada = Integer.parseInt(s.nextLine());
                                     // Limpio la pantalla
-                                    for (int i = 0; i < 40; i++) {
+                                    for (int i = 0; i < 100; i++) {
                                         System.out.println();
                                     }
                                     if (resTipoEntrada < 1 || resTipoEntrada > 3) {
@@ -235,7 +235,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                                 Seleccione el tipo de entrada indicando su número:\s""");
                                     resTipoEntrada = Integer.parseInt(s.nextLine());
                                     // Limpio la pantalla
-                                    for (int i = 0; i < 40; i++) {
+                                    for (int i = 0; i < 100; i++) {
                                         System.out.println();
                                     }
                                     if (resTipoEntrada < 1 || resTipoEntrada > 3) {
@@ -256,7 +256,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
 
                             default:
                                // Limpio la pantalla
-                               for (int i = 0; i < 40; i++) {
+                               for (int i = 0; i < 100; i++) {
                                     System.out.println();
                                }
                                System.out.println("Datos introducidos incorrectamente");
@@ -285,7 +285,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                             if (entradaE2) entradasPE2 += cantEntradasP;
                                             if (entradaE3) entradasPE3 += cantEntradasP;
                                             // Limpio la pantalla
-                                            for (int i = 0; i < 40; i++) {
+                                            for (int i = 0; i < 100; i++) {
                                                 System.out.println();
                                             }
                                             if (cantEntradasP < 0 || cantEntradasP > 140) {
@@ -317,7 +317,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                             if (entradaE2) entradasBE2 += cantEntradasB;
                                             if (entradaE3) entradasBE3 += cantEntradasB;
                                             // Limpio la pantalla
-                                            for (int i = 0; i < 40; i++) {
+                                            for (int i = 0; i < 100; i++) {
                                                 System.out.println();
                                             }
                                             if (cantEntradasB < 0 || cantEntradasB > 200) {
@@ -349,7 +349,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                             if (entradaE2) entradasAE2 += cantEntradasA;
                                             if (entradaE3) entradasAE3 += cantEntradasA;
                                             // Limpio la pantalla
-                                            for (int i = 0; i < 40; i++) {
+                                            for (int i = 0; i < 100; i++) {
                                                 System.out.println();
                                             }
                                             if (cantEntradasA < 0 || cantEntradasA > 200) {
@@ -376,7 +376,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                 }
                             } while (!resSimFecha.equals("SI") && !resSimFecha.equals("NO"));
                             // Limpio la pantalla
-                            for (int i = 0; i < 40; i++) {
+                            for (int i = 0; i < 100; i++) {
                                 System.out.println();
                             }
 
@@ -404,7 +404,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                             totalEntradas = (total + precioDistrIVA) * entradas;
 
                             // Doy el total de todas las entradas
-                            System.out.printf("El total de todas las entradas es de: (%.2f + %.2f) * %d = %.2f€\n", total, precioDistrIVA, entradas, totalEntradas); // TODO ffffffffff
+                            System.out.printf("El total de todas las entradas es de: (%.2f + %.2f) * %d = %.2f€\n", total, precioDistrIVA, entradas, totalEntradas);
 
                             // Pregunto por la cantidad que va a pagar el clente
                             do {
@@ -418,7 +418,6 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                             // Aqui doy el cambio al cliente
                             do {
                                 if (dineroCliente < totalEntradas) {
-                                    System.out.println("Debes introducir una cantidad mayor o igual al total a pagar");
                                     pago = false;
                                 } else {
                                     if ((cambio >= 50) && (bill50 > 0)) {
@@ -513,24 +512,30 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                             if (evento3 && !evento1 && !evento2) totalIngresosJazz += totalEntradas;
 
                             // Digo el numero de monedas que devuelvo de cada tipo
-                            if (contBill50 > 0) System.out.printf("Billetes de 50€ devueltos.   --> %d\n", contBill50);
-                            if (contBill20 > 0) System.out.printf("Billetes de 20€ devueltos.   --> %d\n", contBill20);
-                            if (contBill10 > 0) System.out.printf("Billetes de 10€ devueltos.   --> %d\n", contBill10);
-                            if (contBill5 > 0) System.out.printf("Billetes de 5€ devueltos.    --> %d\n", contBill5);
-                            if (contMoneda2 > 0) System.out.printf("Monedas de 2€ devueltas.     --> %d\n", contMoneda2);
-                            if (contMoneda1 > 0) System.out.printf("Monedas de 1€ devueltas.     --> %d\n", contMoneda1);
-                            if (contCent50 > 0) System.out.printf("Monedas de 0.50€ devueltas.  --> %d\n", contCent50);
-                            if (contCent20 > 0) System.out.printf("Monedas de 0.20€ devueltas.  --> %d\n", contCent20);
-                            if (contCent10 > 0) System.out.printf("Monedas de 0.10€ devueltas.  --> %d\n", contCent10);
-                            if (contCent5 > 0) System.out.printf("Monedas de 0.05€ devueltas.  --> %d\n", contCent5);
-                            if (contCent2 > 0) System.out.printf("Monedas de 0.02€ devueltas.  --> %d\n", contCent2);
-                            if (contCent1 > 0) System.out.printf("Monedas de 0.01€ devueltas.  --> %d\n", contCent1);
+                            if (pago) {
+                                if (contBill50 > 0) System.out.printf("Billetes de 50€ devueltos.   --> %d\n", contBill50);
+                                if (contBill20 > 0) System.out.printf("Billetes de 20€ devueltos.   --> %d\n", contBill20);
+                                if (contBill10 > 0) System.out.printf("Billetes de 10€ devueltos.   --> %d\n", contBill10);
+                                if (contBill5 > 0) System.out.printf("Billetes de 5€ devueltos.    --> %d\n", contBill5);
+                                if (contMoneda2 > 0) System.out.printf("Monedas de 2€ devueltas.     --> %d\n", contMoneda2);
+                                if (contMoneda1 > 0) System.out.printf("Monedas de 1€ devueltas.     --> %d\n", contMoneda1);
+                                if (contCent50 > 0) System.out.printf("Monedas de 0.50€ devueltas.  --> %d\n", contCent50);
+                                if (contCent20 > 0) System.out.printf("Monedas de 0.20€ devueltas.  --> %d\n", contCent20);
+                                if (contCent10 > 0) System.out.printf("Monedas de 0.10€ devueltas.  --> %d\n", contCent10);
+                                if (contCent5 > 0) System.out.printf("Monedas de 0.05€ devueltas.  --> %d\n", contCent5);
+                                if (contCent2 > 0) System.out.printf("Monedas de 0.02€ devueltas.  --> %d\n", contCent2);
+                                if (contCent1 > 0) System.out.printf("Monedas de 0.01€ devueltas.  --> %d\n", contCent1);
+                            }
+
 
                             // Devuelvo el valor a cambio y lo saco por pantalla
-                            cambio = dineroCliente - totalEntradas;
-                            System.out.printf("El cambio es de: %.2f€\n", cambio);
-                            System.out.print("Pulsa 'Enter' para ver las entradas");
-                            s.nextLine();
+                            if (pago) {
+                                cambio = dineroCliente - totalEntradas;
+                                System.out.printf("El cambio es de: %.2f€\n", cambio);
+                                System.out.print("Pulsa 'Enter' para ver las entradas");
+                                s.nextLine();
+                            }
+
 
                             // Enseño las entradas
                             if (pago) {
@@ -562,15 +567,16 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
 
                             }
                              // limpio pantalla
-                             for (int i = 0; i < 40; i++) {
+                             for (int i = 0; i < 100; i++) {
                                   System.out.println();
                              }
+                             if (!pago) System.out.println("Debes introducir una cantidad mayor o igual al total a pagar");
                         }
                     } else { System.out.println("Lo sentimos nos hemos quedado sin fondos para el cambio");
                         System.out.print("Pulsa 'Enter' para continuar");
                         s.nextLine();
                         // Limpio la pantalla
-                        for (int i = 0; i < 40; i++) {
+                        for (int i = 0; i < 100; i++) {
                             System.out.println();
                         }
                     }
@@ -605,7 +611,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                             fecha = LocalDate.parse(s.nextLine());
                         }
                         // Limpio la pantalla
-                        for (int i = 0; i < 40; i++) {
+                        for (int i = 0; i < 100; i++) {
                             System.out.println();
                         }
                         switch (resEventoB) {
@@ -688,7 +694,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                             if (!resInfo.equals("SI") && !resInfo.equals("NO")) System.out.println("\nERROR, Debes introducir 'SI' o 'NO'\n");
                             else {
                                 // Limpio la pantalla
-                                for (int i = 0; i < 40; i++) {
+                                for (int i = 0; i < 100; i++) {
                                     System.out.println();
                                 }
                             }
@@ -697,7 +703,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                     System.out.print("\nPulse 'Enter' para volver al menú principal");
                     s.nextLine();
                     // Limpio la pantalla
-                    for (int i = 0; i < 40; i++) {
+                    for (int i = 0; i < 100; i++) {
                         System.out.println();
                     }
                     break;
@@ -714,7 +720,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                         String pass = s.nextLine();
                         if (user.equals("admin") && pass.equals("12345")) {
                             // Limpio la pantalla
-                            for (int i = 0; i < 40; i++) {
+                            for (int i = 0; i < 100; i++) {
                                 System.out.println();
                             }
                             System.out.println("\n¡Bienvenido!\n");
@@ -726,12 +732,13 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                     } while (!bloqueo && !logueado);
 
                     if (bloqueo) {
+                        for (int i = 0; i < 100; i++) {
+                            System.out.println();
+                        }
                         System.out.println("¡Has fallado 3 veces!, Volviendo al menú inicial.");
                         System.out.println("═════════════════════════════════════════════════\n");
                         // Limpio la pantalla
-                        for (int i = 0; i < 40; i++) {
-                            System.out.println();
-                        }
+
                     } else {
                         do {
                             System.out.print("""
@@ -744,7 +751,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                     Seleccione una opción indicando su apartado (1,2,3):\s""");
                             admin = Integer.parseInt(s.nextLine());
                             // Limpio la pantalla
-                            for (int i = 0; i < 40; i++) {
+                            for (int i = 0; i < 100; i++) {
                                 System.out.println();
                             }
 
@@ -757,7 +764,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                     System.out.print("\nPulsa 'Enter' para continuar");
                                     s.nextLine();
                                     // limpio pantalla
-                                    for (int i = 0; i < 40; i++) {
+                                    for (int i = 0; i < 100; i++) {
                                         System.out.println();
                                     }
                                     break;
@@ -782,7 +789,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                     System.out.print("\nPulsa 'Enter' para continuar");
                                     s.nextLine();
                                     // limpio pantalla
-                                    for (int i = 0; i < 40; i++) {
+                                    for (int i = 0; i < 100; i++) {
                                         System.out.println();
                                     }
                                     break;
@@ -806,7 +813,7 @@ public class Alfonso_Alvarez_Practica_Obligatoria_Tema_2 {
                                         System.out.println("Debes introducir 'SI' o 'NO'");
                                     else {
                                         // Limpio la pantalla
-                                        for (int i = 0; i < 40; i++) {
+                                        for (int i = 0; i < 100; i++) {
                                             System.out.println();
                                         }
                                     }
