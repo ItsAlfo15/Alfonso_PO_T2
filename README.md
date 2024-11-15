@@ -34,8 +34,7 @@ Para poder ejecutar el programa primero se deberá tener instalada la última ve
 Una vez elegida la opción compatible, la descarga comenzará automaticamente, cuando se descargue, al instalarlo se deberá verificar que la ruta de instalación sea (C:\Program Files\Java) y luego continuar con los pasos que te indique el instalador.
 
 ### 4. Descarga del programa
-- Para descargar el programa, primero se deberá tener una cuenta en GitHub.
-Una vez tengamos nuestra cuenta accederemos al enlace proporcionado.
+- Para descargar el programa, accederemos al enlace proporcionado.
 Para descargar el programa deberemos clicar en el menú verde que pone "Code".
 
 ![image"](https://github.com/user-attachments/assets/a3d06996-b2e0-42dd-8be8-0d5a028276d3)
